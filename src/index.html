@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website PMB UPJ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5a1cfa064a.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="photo/navbarupj.jpg" type="image/x-icon">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    height: {
+                        '128': '28.152rem',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+    <nav class="p-8 md:p-3 bg-blue-700">
+        <div class="container flex flex-wrap justify-between items-center mx-auto text-white">
+            <a href="#" class="flex items-center">
+                <img class="mr-3 h-6 md:h-12" src="photo/navbarupj.jpg" alt="UPJ LOGO">
+                <span class="self-center text-md font-semibold">Seleksi Penerimaan Mahasiswa Baru</span>
+            </a>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0">
+                    <li>
+                        <a href="#" class="block py-2 pr-4 pl-3" aria-current="page">Beranda</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pr-4 pl-3">Jalur Seleksi</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pr-4 pl-3">Informasi</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="hidden w-full md:block md:w-auto">
+                <ul class="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0">
+                    <li class="flex flex-row justify-center items-center">
+                        <p class="mr-2 text-lg">ID</p>
+                        <i class="fa-solid fa-globe pt-0.5"></i>
+                    </li>
+                    <li>
+                        <button class="border rounded-lg py-3 px-5">Masuk</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <figure>
+        <div class="relative" style="height: 600px;">
+            <div class="bg-no-repeat bg-cover brightness-50"
+                style="background-image: url(photo/carousel1.jpg); width: 100%; height: 100%;">
+            </div>
+            <div class="container absolute top-36 left-20 md:top-52 md:left-40">
+                <h1 class="flex flex-wrap text-white text-4xl max-w-0 font-bold py-5 md:text-5xl md:max-w-none">Daftarkan dirimu Sekarang juga</h1>
+                <hr class="mb-6 border-t-2 w-40 md:w-96" style="border: none; border:solid white">
+                <a href="#"
+                    class="inline-flex justify-center items-center py-2 px-3 md:p-5 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300">
+                    Daftar Sekarang
+                </a>
+            </div>
+        </div>
+    </figure>
 </body>
+
 </html>
